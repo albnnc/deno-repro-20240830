@@ -1,0 +1,11 @@
+{
+  // We don't want this module to be part of outer workspace
+  // for different reasons. For example, we might want it
+  // to have different compiler options.
+  "name": "@test/internal",
+  "version": "0.0.0",
+  "exports": "./mod.ts",
+  // We want, however, to use it as a package.
+  "workspace": [],
+  "patch": ["../"]
+}

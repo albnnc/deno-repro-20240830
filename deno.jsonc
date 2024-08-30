@@ -1,0 +1,11 @@
+{
+  "name": "@test/outer",
+  "version": "0.0.0",
+  "exports": "./mod.ts",
+  // This "workspace" is needed, since we want to specify
+  // "patch" to use some other local package.
+  "workspace": [],
+  "patch": [
+    // <reference to some other package outside of this directory>
+  ]
+}
